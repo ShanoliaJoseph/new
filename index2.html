@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Pacifico);
+$red: #cf4646;
+$count: 1;
+$right: 170;
+
+.spiner {
+  height: 100vh;
+  background: $red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &_inner {
+    width: 300px;
+    text-align: center;
+    .text {
+      font-family: 'Pacifico', cursive;
+      font-size: 36px;
+      color: #fff;
+      padding-bottom: 30px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.48);
+      position: relative;
+      span {
+        position: absolute;
+        bottom: 10px;
+        opacity: 0;
+        font-size: 60px;
+        @while($count <= 3){
+          &:nth-child(#{$count}) {
+            right: #{$right}px;
+            animation: dot 1.2s infinite ease-in #{$count}s;
+          }
+          $count: $count + 1;
+          $right: $right - 25;
+        }
+      }
+    }
+  }
+}
+
+@keyframes dot {
+  0% {bottom: 10px; opacity: 0;}
+  30% {bottom: 0; opacity: 1;}
+  70% {bottom: 0; opacity: 1;}
+  100% {bottom: -10px; opacity: 0;}
+}
+</style>
+<body>
+</html><div class="spiner">
+    <div class="spiner_inner">
+      <p class="text">Loding
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </p>
+    </div>
+  </div>
+  </body>

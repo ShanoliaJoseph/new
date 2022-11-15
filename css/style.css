@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar img {
+    width: 78px;
+    height: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    padding-left: 150px;
+
+}
+
+.nav-content {
+    margin-top: 18px;
+}
+
+.navbar a:hover {
+    color: aquamarine;
+}
+
+.banner img {
+    width: 1500px;
+    height: auto;
+
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    color: white;
+    width: 300px;
+    top: 200px;
+}
+
+.banner h1 {
+    font-size: 60px;
+    color: aliceblue;
+}
+
+.btn {
+    padding: 5px 1px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.material-symbols-outlined {
+    padding: 5px 1px;
+    border-radius: 10px;
+    margin-left: 2px;
+    bottom: 200px;
+}
+
+.main {
+
+    padding: 3px 3px;
+    bottom: left 10px;
+
+}
+.main button{
+    display: inline;
+}
+
+.banner-content p {
+    display: block;
+}
+
+.row img {
+    width: 180px;
+    height: 300px;
+    padding:0;
+    margin: 0;
+    transition: transform 450ms;
+}
+
+.row img:hover {
+    transform: scale(1.08);
+}
